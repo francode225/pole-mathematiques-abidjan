@@ -1,0 +1,568 @@
+/* PMA Custom Colors */
+:root {
+    --pma-yellow: #ffc000;
+    --pma-blue: #014bc6;
+}
+
+/* Override theme colors with PMA colors */
+.theme-blue-bg {
+    background-color: var(--pma-blue) !important;
+}
+
+.theme-btn.yellow-btn {
+    background-color: var(--pma-yellow) !important;
+    color: #000 !important;
+}
+
+.theme-btn.yellow-btn:hover {
+    background-color: #e6a600 !important;
+}
+
+.theme-btn.style-2 {
+    background-color: var(--pma-blue) !important;
+    color: #fff !important;
+}
+
+.theme-btn.style-2:hover {
+    background-color: #003a9e !important;
+}
+
+/* Header logo text styling */
+.logo-text {
+    font-weight: bold;
+    color: var(--pma-blue);
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+/* Custom styling for PMA sections */
+.section-title h6 {
+    color: var(--pma-blue);
+}
+
+.section-title h2 {
+    color: var(--pma-blue);
+}
+
+/* Hero section customizations */
+.hero-content h1 {
+    color: var(--pma-blue);
+}
+
+.hero-content span {
+    color: var(--pma-yellow);
+    font-weight: 600;
+}
+
+/* Counter boxes */
+.counter-box h2 {
+    color: var(--pma-blue);
+}
+
+.rating-box h2 {
+    color: var(--pma-yellow);
+}
+
+/* About section */
+.about-content .counter-content h2 {
+    color: var(--pma-blue);
+}
+
+/* Courses cards */
+.courses-title {
+    color: var(--pma-blue);
+}
+
+.topic-title {
+    color: var(--pma-yellow);
+}
+
+/* Navigation links */
+.main-menu ul li a {
+    color: #333;
+}
+
+.main-menu ul li a:hover {
+    color: var(--pma-blue);
+}
+
+/* Accessibility improvements */
+.badge.bg-success {
+    background-color: #28a745 !important;
+    color: #fff !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+/* Ensure good contrast for text */
+.hero-content h1 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.section-title h2 {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* University name styling */
+.university-name {
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 1.3;
+    color: #666;
+    text-align: center;
+}
+
+.top-category-box-items.active .university-name {
+    color: var(--pma-blue);
+    font-weight: 600;
+}
+
+.top-category-box-items:hover .university-name {
+    color: var(--pma-blue);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .hero-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .courses-title {
+        font-size: 1.2rem;
+    }
+    
+    .topic-title {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content h3 {
+        font-size: 1rem;
+    }
+    
+    .header-button .theme-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Values (Nos Valeurs) - Minimalist design */
+.values-box {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.values-box h3 {
+    margin-bottom: 20px;
+    color: var(--pma-blue);
+    font-size: 1.5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    background: #fff;
+    border: 1px solid rgba(1, 75, 198, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.value-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--pma-yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.value-icon i {
+    font-size: 20px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.value-content h5 {
+    margin: 0 0 8px;
+    color: var(--pma-blue);
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.value-content p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.values-grid:hover .value-item:not(:hover) {
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+
+.value-item:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 0 8px 25px rgba(1, 75, 198, 0.15);
+    border-color: var(--pma-blue);
+    z-index: 10;
+}
+
+.value-item:hover .value-icon {
+    background: var(--pma-blue);
+    transform: scale(1.1);
+}
+
+.value-item:hover .value-icon i {
+    color: #fff;
+}
+
+.value-item:hover .value-content h5 {
+    color: var(--pma-blue);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .value-item {
+        padding: 15px 10px;
+    }
+    
+    .value-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .value-icon i {
+        font-size: 16px;
+    }
+    
+    .value-content h5 {
+        font-size: 0.9rem;
+    }
+    
+    .value-content p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Force animations to work */
+.value-item {
+    will-change: transform, opacity, box-shadow;
+}
+
+.value-icon {
+    will-change: transform, background-color;
+}
+
+/* Motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .value-item,
+    .value-icon,
+    .values-grid:hover .value-item,
+    .value-item:hover {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* Modules list styling */
+.modules-list {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.modules-list p {
+    margin: 0 0 8px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--pma-blue);
+}
+
+.modules-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.modules-list li {
+    margin: 4px 0;
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.modules-list li:before {
+    content: "•";
+    color: var(--pma-yellow);
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* ======================= */
+/* Contact & Footer Tweaks */
+/* ======================= */
+
+/* Prevent long text (emails, phones, addresses) from overflowing cards */
+.contact-section .contact-box-items h4,
+.contact-section .contact-box-items h4 a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.contact-section .contact-box-items h4 a {
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* Footer contact list overflow safety */
+.footer-section .contact-info li,
+.footer-section .contact-info a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* ===================== */
+/* Minimal Select Styling */
+/* ===================== */
+
+/* Keep it minimal and consistent with inputs */
+.contact-section-2 .form-select,
+.contact-section-2 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 12px 14px;
+    padding-right: 36px;
+    width: 100%;
+    min-height: 48px;
+    height: auto;
+    line-height: 1.5;
+    color: #111;
+    box-shadow: none;
+    background-image: none !important;
+}
+
+.contact-section-2 .form-select:focus,
+.contact-section-2 select:focus {
+    outline: none;
+    border-color: var(--pma-blue);
+    box-shadow: 0 0 0 2px rgba(1, 75, 198, 0.08);
+    background-color: #fff !important;
+}
+
+/* Optional chevron removed for ultra-minimal look (avoid theme conflicts) */
+
+/* Align inputs and textareas visually with selects */
+.contact-section-2 .form-clt input,
+.contact-section-2 .form-clt textarea {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: none;
+}
+
+.contact-section-2 .form-clt input:focus,
+.contact-section-2 .form-clt textarea:focus {
+    outline: none;
+    border-color: var(--pma-blue);
+    box-shadow: 0 0 0 2px rgba(1, 75, 198, 0.08);
+}
+
+/* Ensure dropdown isn't clipped by container */
+.contact-section-2 .form-clt {
+    overflow: visible;
+}
+
+/* Make sure option text isn't clipped (where supported) */
+.contact-section-2 select option {
+    white-space: normal;
+    width: 100% !important;
+    max-width: none;
+}
+
+/* ======================= */
+/* Assistant PMA - Widget  */
+/* ======================= */
+
+.pma-assistant {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    font-family: inherit;
+}
+
+.pma-assistant__launcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--pma-blue);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(1, 75, 198, 0.22);
+}
+
+.pma-assistant__launcher:hover {
+    background: #003a9e;
+}
+
+.pma-assistant__panel {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    width: 320px;
+    max-height: 78vh;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 12px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10000;
+}
+
+.pma-assistant__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: var(--pma-blue);
+    color: #fff;
+}
+
+.pma-assistant__title {
+    font-weight: 600;
+}
+
+.pma-assistant__close {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pma-assistant__messages {
+    padding: 12px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex: 1 1 auto;
+}
+
+.pma-assistant__msg {
+    padding: 10px 12px;
+    border-radius: 10px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.pma-assistant__msg--bot {
+    background: #f4f7ff;
+    color: #0b1c3d;
+    border: 1px solid rgba(1,75,198,0.12);
+}
+
+.pma-assistant__msg--user {
+    background: #fff6d6;
+    color: #3d3000;
+    border: 1px solid rgba(255,192,0,0.35);
+    align-self: flex-end;
+}
+
+.pma-assistant__input {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    background: #fff;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+.pma-assistant__input input[type="text"] {
+    flex: 1;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    background: #fff;
+    color: #111;
+}
+
+.pma-assistant__input input[type="text"]::placeholder {
+    color: #666;
+}
+
+@media (max-width: 575px) {
+    .pma-assistant__panel {
+        width: 95vw;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
