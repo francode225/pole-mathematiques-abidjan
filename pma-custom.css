@@ -133,7 +133,11 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .logo-text {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .logo-img{
+        width: 10px;
     }
     
     .hero-content h1 {
@@ -158,6 +162,9 @@
     .hero-content h1 {
         font-size: 1.8rem;
     }
+    .logo-text {
+        font-size: 16px;
+    }
     
     .hero-content h3 {
         font-size: 1rem;
@@ -166,6 +173,16 @@
     .header-button .theme-btn {
         padding: 8px 12px;
         font-size: 0.9rem;
+    }
+}
+
+/* Ensure image logo scales if used */
+@media (max-width: 768px) {
+    .header-1 .logo img,
+    .offcanvas__logo img {
+        max-height: 28px;
+        height: auto;
+        width: auto;
     }
 }
 
